@@ -57,7 +57,7 @@ public abstract class Vehicle {
 		this.colour = licencePlate;
 	}
 
-	public void print() {
+	public void finalPrint() {
 		System.out.println("Number of Wheels: " + this.numberOfWheels);
 		System.out.println("Number of Doors: " + this.numberOfDoors);
 		System.out.println("Colour: " + this.colour);
@@ -65,4 +65,7 @@ public abstract class Vehicle {
 		System.out.print("Horn Sound: ");
 		this.communicate();
 	}
+
+	public abstract void addPrint();
+
 }

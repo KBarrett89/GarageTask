@@ -13,12 +13,28 @@ public class Aeroplane extends Vehicle {
 		// line 15 = line 9 - 12
 
 		super(numberOfWheels, numberOfDoors, colour, licencePlate);
+		this.numberOfSeats = numberOfSeats;
 
-		// getters and setters for num and seats
+	}
+
+	public int getnumberOfSeats() {
+		return numberOfSeats;
+	}
+
+	public void setnumberOfSeats(int numberOfSeats) {
+		this.numberOfSeats = numberOfSeats;
 	}
 
 	@Override
 	public void communicate() {
 		System.out.println("Waaaahhhhh");
 	}
+
+	@Override
+	public void addPrint() {
+		System.out.println("Number of Steats" + numberOfSeats);
+	}
+
+	public double calcBill() {
+		return (getnumberOfWheels() * 50);
 }
